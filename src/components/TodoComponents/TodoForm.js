@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/styles";
 import Input from "@material-ui/core/Input";
 import Button from "@material-ui/core/Button";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   container: {
     display: "flex",
     justifyContent: "space-between",
@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   inputer: {
     background: "white"
   }
-}));
+});
 
 export default function ToDoForm(props) {
   const classes = useStyles();
@@ -28,7 +28,7 @@ export default function ToDoForm(props) {
     <form className={classes.container} onSubmit={props.handleSubmit}>
       <div className={classes.input}>
         <Input
-          placeholder="Add ToDo"
+          placeholder="Next Todo"
           inputProps={{
             "aria-label": "description"
           }}

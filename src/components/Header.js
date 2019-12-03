@@ -4,7 +4,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <span className="title">My Todo's</span>
+        <span className="title">My Todos</span>
         <input type="text" className="searchInput" placeholder="Search ..." />
       </div>
     );
