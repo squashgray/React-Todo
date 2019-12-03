@@ -36,7 +36,7 @@ export default function ToDoForm(props) {
           onChange={props.handleChange}
         />
         <Button type="submit" variant="contained">
-          Add
+          Add Task
         </Button>
         <Button
           className="clear"
